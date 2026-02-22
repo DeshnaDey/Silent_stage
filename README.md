@@ -8,6 +8,19 @@ Rather than focusing on perfect translation, the goal of this project is to demo
 
 This repository serves as an exploration of how assistive technologies can be reimagined for dynamic, real-world environments like concerts, festivals, and live performances.
 
+## System Architecture Overview
+
+Silent Stage follows a modular pipeline architecture:
+
+1. Audio Input Layer – Captures live audio streams.
+
+2. Processing Layer – Converts speech to text and transforms it into sign-friendly structured output.
+
+3. Inference Layer – Handles ML-based pose extraction and avatar signal generation.
+
+4. Visualization Layer – Renders the animated sign language avatar through the frontend interface.
+
+This modular design ensures extensibility, allowing future integration of improved speech models or enhanced avatar systems without restructuring the entire pipeline.
 ## Project Structure
 
 - `backend/`: FastAPI server for pose extraction and ML inference.
